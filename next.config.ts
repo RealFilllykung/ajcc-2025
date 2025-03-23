@@ -1,8 +1,17 @@
 import type { NextConfig } from "next";
 
+const repo = "ajcc-2025";
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
+
 const nextConfig: NextConfig = {
-  asePath: "/ajcc-2025",
+  trailingSlash: true,
+  basePath: basePath,
+  assetPrefix: assetPrefix,
   output: "export",
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
 };
 
