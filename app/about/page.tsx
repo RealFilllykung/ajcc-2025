@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <main
       className="min-h-screen items-center justify-center p-4 text-white"
-      style={{ backgroundColor: "#C21E56" }}
+      style={{ backgroundColor: "#BC002D" }}
     >
       <div className="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-3">
         <div className="hidden sm:block">Image of me will be on this side</div>
