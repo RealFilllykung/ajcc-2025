@@ -11,10 +11,10 @@ import OutlookButton from "@/components/custom/contact/OutlookButton"
 export default function ContactPage() {
   return (
     <main
-      className="flex flex-col min-h-screen items-center justify-center p-4 text-white"
+      className="flex flex-col min-h-screen items-center p-4 text-white"
       style={{ backgroundColor: "#C21E56" }}
     >
-      <section className="flex flex-col items-center justify-center p-4">
+      <section className="flex flex-col items-center p-4">
         <div className="max-w-md w-full">
 
           <div className="flex flex-col space-y-4 mt-8">
