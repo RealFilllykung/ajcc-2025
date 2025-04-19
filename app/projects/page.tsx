@@ -36,10 +36,31 @@ export default function ProjectsPage() {
 
           <div>
             <h2 className="text-3xl font-bold">Basic Self Sovereign Identity Concept</h2>
+            <p>Here are some of the basic terminology that we need to know first.</p>
+            <ol className="list-decimal list-inside">
+              <li>Verifiable credential (VC): The credential that can be self verifiable. You can think it as a message for this framework.</li>
+              <li>Verifiable presentation (VP): The envelope that keeps VC inside.</li>
+              <li>Issuer: The person who issue VC</li>
+              <li>Holder: The person that will receive VC from issuer and keep it with itself</li>
+              <li>Verifier: The person that will receive VP from holder and verify the validity of VC</li>
+              <li>Data registry: The database that keeps the record of VC</li>
+            </ol>
+            <p>After we know some basic terms already, now we can have a look on how the component interact to each other</p>
+            {/* <Image></Image> */}
+            <p>Now let's understand the basic scenario which VC will get transfer from issuer to verifier. Here are the list of actions for each component to transfer VC from issuer to verifier.</p>
+            <ol className="list-decimal list-inside">
+              <li>Holder request VC from issuer</li>
+              <li>Issuer generate new VC, save the VC inside data registry, and send it to the holder</li>
+              <li>Holder will save VC into a digital wallet</li>
+              <li>Verifier request VC from holder</li>
+              <li>Holder create VP which will attach VC inside VP and send it to verifier</li>
+              <li>Verifier verify the validity of VC and choose to accept or decline</li>
+            </ol>
           </div>
 
           <div>
             <h2 className="text-3xl font-bold">Implementation</h2>
+            <p>For this project, we only focus on the holder module. The program implementation will only cont</p>
           </div>
 
         </div>
