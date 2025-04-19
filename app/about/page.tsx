@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -8,8 +9,10 @@ export default function AboutPage() {
       style={{ backgroundColor: "#C21E56" }}
     >
       <div className="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-3">
-        <div className="hidden sm:block">Image of me will be on this side</div>
-
+        <div>
+          <Image src="/ajcc-2025/profile-picture.jpg" width={500} height={500} alt="profile-picture"></Image>
+        </div>
+        
         <div>
           <h1 className="text-4xl font-bold">About Me</h1>
 
