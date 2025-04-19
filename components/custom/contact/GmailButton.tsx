@@ -18,6 +18,7 @@ const GmailButton = () => {
         onClick={handleOnClick}
         className="h-14 text-lg bg-white text-[#C21E56] hover:bg-white/90"
       >
+        {/* <FiGmail size={20} color="#C21E56" /> */}
         {' '}
         Personal Gmail
       </Button>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-// import { FiGmail } from 'react-icons/fi';
+// import { FiOutlook } from 'react-icons/fi';
 
 const OutlookButton = () => {
     const handleOnClick = () => {
@@ -18,6 +18,7 @@ const OutlookButton = () => {
         onClick={handleOnClick}
         className="h-14 text-lg bg-white text-[#C21E56] hover:bg-white/90"
       >
+        {/* <FiOutlook size={20} color="#C21E56" /> */}
         {' '}
         Mahidol University Email
       </Button>
