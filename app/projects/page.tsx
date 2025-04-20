@@ -5,7 +5,7 @@ export default function ProjectsPage() {
   return (
     <main
       className="flex flex-col min-h-screen items-center p-4 text-white"
-      style={{ backgroundColor: "#C21E56" }}
+      style={{ backgroundColor: "#BC002D" }}
     >
       <div className="max-w-3xl w-full space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold text-center">Verifiable Credential Wallet for Digital Transcript</h1>

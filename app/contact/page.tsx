@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <main
       className="flex flex-col min-h-screen items-center p-4 text-white"
-      style={{ backgroundColor: "#C21E56" }}
+      style={{ backgroundColor: "#BC002D" }}
     >
       <section className="flex flex-col items-center p-4">
         <div className="max-w-md w-full">
