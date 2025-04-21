@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FiMail } from 'react-icons/fi';
+import CopyClipboardToast from "./CopyClipboardToast";
+import { toast } from "@/hooks/use-toast";
 
 const GmailButton = () => {
     const handleOnClick = () => {
@@ -7,10 +9,10 @@ const GmailButton = () => {
   
       try {
         navigator.clipboard.writeText(email);
-        alert("Copied to clipboard!");
+        CopyClipboardToast(email)
       } catch (error) {
         console.error(error);
-      }
+      }      
     };
   
     return (

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { FiMail } from 'react-icons/fi';
+import CopyClipboardToast from "./CopyClipboardToast";
 
 const OutlookButton = () => {
     const handleOnClick = () => {
@@ -7,7 +8,7 @@ const OutlookButton = () => {
   
       try {
         navigator.clipboard.writeText(email);
-        alert("Copied to clipboard!");
+        CopyClipboardToast(email)
       } catch (error) {
         console.error(error);
       }
