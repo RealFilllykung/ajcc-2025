@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-// import { FiOutlook } from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
+import CopyClipboardToast from "./CopyClipboardToast";
 
 const OutlookButton = () => {
     const handleOnClick = () => {
@@ -7,7 +8,7 @@ const OutlookButton = () => {
   
       try {
         navigator.clipboard.writeText(email);
-        alert("Copied to clipboard!");
+        CopyClipboardToast(email)
       } catch (error) {
         console.error(error);
       }
@@ -18,7 +19,7 @@ const OutlookButton = () => {
         onClick={handleOnClick}
         className="h-14 text-lg bg-white text-[#C21E56] hover:bg-white/90"
       >
-        {/* <FiOutlook size={20} color="#C21E56" /> */}
+        <FiMail size={20} color="#C21E56" />
         {' '}
         Mahidol University Email
       </Button>

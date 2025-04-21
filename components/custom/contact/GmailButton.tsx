@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-// import { FiGmail } from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
+import CopyClipboardToast from "./CopyClipboardToast";
+import { toast } from "@/hooks/use-toast";
 
 const GmailButton = () => {
     const handleOnClick = () => {
@@ -7,10 +9,10 @@ const GmailButton = () => {
   
       try {
         navigator.clipboard.writeText(email);
-        alert("Copied to clipboard!");
+        CopyClipboardToast(email)
       } catch (error) {
         console.error(error);
-      }
+      }      
     };
   
     return (
@@ -18,7 +20,7 @@ const GmailButton = () => {
         onClick={handleOnClick}
         className="h-14 text-lg bg-white text-[#C21E56] hover:bg-white/90"
       >
-        {/* <FiGmail size={20} color="#C21E56" /> */}
+        <FiMail size={20} color="#C21E56" />
         {' '}
         Personal Gmail
       </Button>
