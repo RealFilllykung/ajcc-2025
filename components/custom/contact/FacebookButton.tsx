@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-// import { FiFacebook } from 'react-icons/fi';
+import { FiFacebook } from 'react-icons/fi';
 
 const FacebookButton = () => {
   const handleOnClick = () => {
@@ -11,7 +11,7 @@ const FacebookButton = () => {
       onClick={handleOnClick}
       className="h-14 text-lg bg-white text-[#C21E56] hover:bg-white/90"
     >
-      {/* <FiFacebook size={20} color="#C21E56" /> */}
+      <FiFacebook size={20} color="#C21E56" />
       {' '}
       Facebook
     </Button>
