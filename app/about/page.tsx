@@ -42,12 +42,15 @@ export default function AboutPage() {
 
           <h3 className="text-1xl">SCG</h3>
           <ol className="list-disc list-inside">
-            <li></li>
+            <li>Implement the booking system for SCG Badminton academy which integrate with Line OA system</li>
           </ol>
           
           <h3 className="text-1xl">ExxonMobil</h3>
           <ol className="list-disc list-inside">
-            <li></li>
+            <li>Perform the cost optimization action to ExxonMobil's cloud resource which result in 30,000+ USD saving per year.</li>
+            <li>Lead the global program development collaboration between Thailand and Brazil team</li>
+            <li>Create and lead the integration layer to enable vendor from China to implement the ASRS system that can communicate with ExxonMobil system</li>
+            <li>Setup and align the work practice of global development team</li>
           </ol>
 
           <h2 className="text-2xl font-bold">Achievements Reference</h2>
